@@ -1,0 +1,16 @@
+[package]
+name = "filehook"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+notify = "6.1"
+sha2 = "0.10"
+hex = "0.4"
+windows = { version = "0.51", features = ["Win32_Foundation", "Win32_System_Memory"] }
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+dirs = "5.0"
+
+[dev-dependencies]
+tempfile = "3.8"
